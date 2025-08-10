@@ -1,0 +1,164 @@
+/* Remove padding and ensure video stretches to viewport edges */
+    .hero {
+      position: relative;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      box-sizing: border-box;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .hero-video-wrapper {
+      position: relative;
+      width: 100%;           /* Use 100% instead of 100vw */
+      aspect-ratio: 16 / 9;
+      background: #000;
+    }
+
+    .hero iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+
+    .tagline {
+      text-align: center;
+      font-size: 1.2rem;
+      padding: 1rem;
+    }
+
+    /* Use flexbox for a fixed gutter and centered wrapping cards */
+    .projects-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px; /* Always 20px gap between cards horizontally and vertically */
+      padding: 1rem 2rem;
+    }
+
+    /* Lock card and image height to width (1:1 aspect ratio) */
+    .project-card {
+      border: 2px solid #333;
+      border-radius: 0px;
+      overflow: hidden;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      min-width: 345px;
+      max-width: 345px;
+      width: 345px;
+      margin: 0;
+    }
+
+    .project-header {
+      background-color: #5a2ca0;
+      color: white;
+      padding: 20px;
+      font-weight: 600;
+      text-align: left;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .project-image {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      background: #fff;
+      display: block;
+      border: none;
+      margin: 0;
+      min-width: 345px;
+      max-width: 345px;
+    }
+
+    .project-footer {
+      background: #EFEDF7;           /* Background color */
+      padding: 1.25rem 1rem;
+      text-align: right;             /* Align text to the right */
+      font-size: 20px;
+      font-weight: 600;              /* Semibold */
+      color: #5a2ca0;
+      display: flex;
+      justify-content: flex-end;     /* Align content to the right */
+      align-items: center;
+      gap: 0.3rem;
+      border-top: 1px solid #e0dbe9; /* Optional: subtle top border */
+    }
+
+    .recommendation {
+      display: flex;
+      align-items: center;
+      padding: 20px 1rem;
+      background-color: #f4f4f4;
+      border-top: 2px solid #ccc;
+      max-width: 700px;
+      margin: 2rem auto 0 auto;
+    }
+
+    .recommendation img {
+      height: 40px;
+      margin-right: 1rem;
+    }
+
+    .recommendation-text {
+      font-weight: bold;
+    }
+
+    @media (max-width: 900px) {
+      .projects-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 0;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .hero {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      .hero-video-wrapper {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+      }
+      .hero iframe {
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+      }
+      .projects-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 0;
+      }
+      .project-card {
+        min-width: 345px;
+        max-width: 345px;
+        width: 345px;
+        margin: 0;
+      }
+      .project-header {
+        padding: 16px;
+        font-size: 1rem;
+      }
+      .project-image {
+        min-width: 345px;
+        max-width: 345px;
+        width: 100%;
+      }
+      .recommendation {
+        padding: 1rem;
+      }
+    }

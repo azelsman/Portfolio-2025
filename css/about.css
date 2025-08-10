@@ -1,0 +1,510 @@
+.about.div {
+  display: flex;
+  flex-direction: column;
+  min-width: 375px;
+  align-items: center;
+  position: relative;
+  background-color: #ffffff;
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about .navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.about .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 10px 10px;
+  padding: 20px;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: #31214f;
+  position: relative;
+  align-self: stretch;
+}
+
+.about .title {
+  display: flex;
+  flex-direction: column;
+  width: 277px;
+  height: 51px;
+  align-items: flex-start;
+  position: relative;
+}
+
+.about .text-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: 32px;
+  white-space: nowrap;
+}
+
+.about .executive-UX-product {
+  position: relative;
+  width: fit-content;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.about .menu {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.about .text-wrapper-2 {
+  font-size: 20px;
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.about .text-wrapper-2:hover {
+  transform: scale(1.05);
+}
+
+.about .albert-e-thumbnail {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.82%; /* 1/1.76 = 0.5682 for aspect ratio */
+  background-image: url(https://c.animaapp.com/p0P8HcmP/img/albert-thumb-1@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.about .container-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 40px 16px 100px;
+  width: 100%;
+  flex: 0 0 auto;
+  position: relative;
+  align-self: stretch;
+}
+
+.about .text-wrapper-3 {
+  position: relative;
+  width: 343px;
+  margin-top: -1.00px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.about .i-m-a-UX-and-product {
+  position: relative;
+  width: 343px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 300;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.about .a-close-up-behind {
+  position: relative;
+  max-width: 400px;
+  width: 100%;
+  max-height: 302.7px;
+  aspect-ratio: 1.32;
+  object-fit: cover;
+}
+
+/* Responsive grid for text and image side-by-side, same height */
+.responsive-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;      /* Make both items the same height */
+  gap: 32px;
+  margin: 32px 0;
+}
+
+.responsive-grid .today-i-operate-at {
+  flex: 1 1 320px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  /* Optional: add padding for readability */
+  padding: 24px;
+}
+
+.responsive-grid .image {
+  flex: 1 1 320px;
+  object-fit: cover;
+  width: 100%;
+  max-height: 400px;
+  min-width: 0;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* Make .image scale down to 320px wide responsively */
+.responsive-grid .image,
+.about .image {
+  width: 100%;
+  max-width: 400px;
+  min-width: 0;
+  object-fit: cover;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 400px) {
+  .responsive-grid .image,
+  .about .image {
+    max-width: 320px;
+  }
+}
+
+/* Stack vertically on small screens */
+@media (max-width: 800px) {
+  .responsive-grid {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+  }
+  .responsive-grid .image {
+    max-width: 100%;
+    height: auto;
+  }
+  .responsive-grid .today-i-operate-at {
+    padding: 12px;
+  }
+}
+
+.about .today-i-operate-at {
+  position: relative;
+  flex: 1;
+  margin-top: -1.00px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 300;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.about .image {
+  max-width: 150px;
+  width: 150px;
+  height: 225px;
+  aspect-ratio: 0.67;
+  position: relative;
+  max-height: 225px;
+  object-fit: cover;
+}
+
+.about .p {
+  font-family: "Open Sans", Helvetica;
+  font-weight: 300;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  align-self: stretch;
+}
+
+.about .img {
+  max-width: 400px;
+  width: 100%;
+  aspect-ratio: 1.78;
+  position: relative;
+  max-height: 225px;
+  object-fit: cover;
+}
+
+.about .floating-action {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 30px 20px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: #32224f;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+}
+
+.about .button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  flex: 0 0 auto;
+  position: relative;
+  align-self: stretch;
+}
+
+.about .button {
+  all: unset;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px 50px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: #d8ff20;
+  border-radius: 50px;
+  min-width: fit-content;
+  white-space: nowrap;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.about .button:hover {
+  transform: scale(1.05);
+}
+
+.about .button-2 {
+  position: relative;
+  width: fit-content;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 700;
+  color: #32224f;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  pointer-events: none;
+}
+
+.about .footer {
+  display: flex;
+  width: 100vw;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  position: relative;
+  flex: 0 0 auto;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  background-color: #1c142a;
+}
+
+.about .responsive-container {
+  flex-direction: column;
+  max-width: 1200px;
+  gap: 10px;
+  flex: 1;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.about .links {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.about .text-wrapper-4 {
+  font-size: 16px;
+  text-align: center;
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.about .text-wrapper-4:hover {
+  transform: scale(1.05);
+}
+
+.about .container-3 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px 10px;
+  width: 100%;
+  flex: 0 0 auto;
+  position: relative;
+  align-self: stretch;
+}
+
+.about .text-wrapper-5 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 300;
+  color: #ffffff !important;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.about.div-2 {
+  display: flex;
+  flex-direction: column;
+  min-width: 1200px;
+  align-items: center;
+  position: relative;
+  background-color: #ffffff;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about .albert-e-thumbnail-2 {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.82%; /* 1/1.76 = 0.5682 for aspect ratio */
+  background-image: url(https://c.animaapp.com/p0P8HcmP/img/albert-thumb-1-1.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.about .text-wrapper-6 {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.about .container-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 30px 20px;
+  position: relative;
+  width: 100vw;
+  max-width: 1200px;
+  flex: 0 0 auto;
+  background-color: #32224f;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+}
+
+.about .div-wrapper {
+  all: unset;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px 50px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: #d8ff20;
+  border-radius: 50px;
+  min-width: fit-content;
+  white-space: nowrap;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.about .div-wrapper:hover {
+  transform: scale(1.05);
+}
+
+.about .footer-2 {
+  display: flex;
+  width: 100vw;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  position: relative;
+  flex: 0 0 auto;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  background-color: #1d152b;
+}
+
+@media (max-width: 1199px) {
+  .about.div-2 {
+    display: none !important;
+  }
+  
+  .about .container {
+    padding: 20px;
+  }
+  
+  .about .container-2 {
+    padding: 40px 16px 100px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about.div {
+    display: none !important;
+  }
+  
+  .about .container {
+    padding: 20px 40px;
+  }
+  
+  .about .container-2 {
+    padding: 40px 60px 100px;
+  }
+}
