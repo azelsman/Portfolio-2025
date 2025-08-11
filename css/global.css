@@ -46,6 +46,13 @@ body {
   display: block;
   background: #fff;
 }
+.hero.bordered {
+  border: 5px solid #000;
+}
+````/* filepath: /Volumes/Data/Portfolio 2025/website/Dev/Portfolio 2025/css/afi.css */
+.hero.bordered {
+  border: 5px solid #000;
+}
 
 
 
