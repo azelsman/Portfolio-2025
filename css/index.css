@@ -55,6 +55,13 @@
       width: 345px;
       margin: 0;
     }
+    a.no-underline,
+    a.no-underline:visited,
+    a.no-underline:hover,
+    a.no-underline:active,
+    a.no-underline:focus {
+      text-decoration: none !important;
+    }
 
     .project-header {
       background-color: #5a2ca0;

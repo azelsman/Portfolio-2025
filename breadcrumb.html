@@ -1,0 +1,24 @@
+<!-- Breadcrumb -->
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+
+      <!-- 1: Home -->
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="index.html">
+          <span itemprop="name">Home</span>
+        </a>
+        <meta itemprop="position" content="1" />
+      </li>
+
+      <!-- Separator -->
+      <li aria-hidden="true" class="separator">›</li>
+
+      <!-- 3: Current page -->
+      <li id="breadcrumb-current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" aria-current="page">
+        <span itemprop="name"></span>
+        <meta itemprop="item" />
+        <meta itemprop="position" content="3" />
+      </li>
+
+    </ol>
+  </nav>
