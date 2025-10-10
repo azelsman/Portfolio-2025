@@ -24,12 +24,9 @@ body {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  padding: .card img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  display: block;
-}ero {
+  padding: 0;
+}
+.hero {
   width: 100%;
   max-width: 1200px;
   min-width: 320px;
@@ -49,10 +46,6 @@ body {
   display: block;
   background: #fff;
 }
-.hero.bordered, .image.bordered {
-  border: 5px solid #000;
-}
-
 .hero.bordered, .image.bordered {
   border: 5px solid #000;
 }
@@ -515,8 +508,7 @@ footer a:hover{
 
 /* Reduce gaps between content chunks, especially on mobile */
 h1 {
-  margin-top: 0
-  ;
+  margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: 400;
   font-size: 1.875rem;
@@ -622,6 +614,7 @@ main .image-wrap {
   height: auto;
   object-fit: cover;
   display: block;
+  border-bottom: 2px solid #333;
 }
 .no-border {
   border: none !important;
@@ -651,14 +644,6 @@ main .image-wrap {
 .card-content p {
   margin: 0;
   text-align: left;
-}
-
-.reverse-branded {
-  font-size: 0.85rem;
-  color: #666;
-  margin-top: 0.5rem;
-  font-style: italic;
-  background: lime
 }
 
 .card-content.special-note {
@@ -752,5 +737,82 @@ main .image-wrap {
   .card {
     margin: 0.5rem 0;
     border-radius: 4px;
+  }
+}
+
+/* chip styles */
+/* Chip Row (container) */
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 0.8rem; /* row/column gap */
+  align-items: center;
+  margin: 0.75rem 0 0;
+  padding: 0;
+  padding-bottom: 2rem;
+}
+
+/* Individual Chip */
+.chip {
+  --chip-bg: var(--surface-2, #f6f7f9);
+  --chip-text: var(--text-1, #1a1a1a);
+  --chip-border: var(--border-1, rgba(0,0,0,0.08));
+  --chip-radius: 999px;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  padding: 0.45rem 0.75rem;
+  background: var(--chip-bg);
+  color: var(--chip-text);
+  border: 1px solid var(--chip-border);
+  border-radius: var(--chip-radius);
+
+  font-size: 0.92rem;
+  line-height: 1.2;
+  white-space: nowrap; /* keeps chips tidy; remove if you want wrapping inside a chip */
+}
+
+/* Make the bold label a touch lighter so it doesn’t shout */
+.chip > strong {
+  font-weight: 600;
+  color: inherit;
+}
+
+/* Dark mode (optional) */
+@media (prefers-color-scheme: dark) {
+  .chip {
+    --chip-bg: var(--surface-2, #1f232a);
+    --chip-text: var(--text-1, #e6e6e6);
+    --chip-border: var(--border-1, rgba(255,255,255,0.12));
+  }
+}
+
+/* Compact variant (optional) */
+.chip-row.is-compact .chip {
+  padding: 0.35rem 0.6rem;
+  font-size: 0.88rem;
+}
+
+/* Small screens: slightly larger tap targets, allow inner wrap if needed */
+@media (max-width: 640px) {
+  .chip {
+    padding: 0.5rem 0.8rem;
+    white-space: normal; /* allow 2-line chips on narrow screens */
+  }
+}
+
+/* Motion-respectful hover focus (optional) */
+@media (prefers-reduced-motion: no-preference) {
+  .chip {
+    transition: background 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+  }
+  .chip:hover,
+  .chip:focus-visible {
+    background: color-mix(in oklab, var(--chip-bg), #000 3%);
+    border-color: color-mix(in oklab, var(--chip-border), #000 12%);
+    box-shadow: 0 1px 0 rgba(0,0,0,0.04);
+    outline: none;
   }
 }
