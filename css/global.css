@@ -514,11 +514,25 @@ h1 {
   font-size: 1.875rem;
 }
 
+h1 .with_subtitle {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 1.875rem;
+}
+
 h2 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: 600;
   font-size: 1.25rem;
+}
+.subtitle {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: #555;
 }
 
 main ul,
@@ -614,7 +628,7 @@ main .image-wrap {
   height: auto;
   object-fit: cover;
   display: block;
-  border-bottom: 2px solid #333;
+  border-bottom: 1px solid #333;
 }
 .no-border {
   border: none !important;
@@ -748,10 +762,8 @@ main .image-wrap {
   gap: 0.6rem 0.8rem; /* row/column gap */
   align-items: center;
   margin: 0.75rem 0 0;
-  padding: 0;
-  padding-bottom: 2rem;
+  padding: 1.5rem 0 2rem 0;
 }
-
 /* Individual Chip */
 .chip {
   --chip-bg: var(--surface-2, #f6f7f9);
