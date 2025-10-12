@@ -838,3 +838,63 @@ main .image-wrap {
     outline: none;
   }
 }
+
+/* Break out of any centered content wrapper */
+.calendar-bleed{
+  width:100vw;
+  position:relative;
+  left:50%;
+  right:50%;
+  margin-left:-50vw;
+  margin-right:-50vw;
+}
+
+/* Force the Calendly wrapper to actually fill the bleed */
+.calendar-bleed .calendly-inline-widget{
+  display:block !important;
+  width:100% !important;
+  max-width:none !important;
+  min-width:0 !important;          /* kill the narrow look */
+  height:calc(100vh - 96px) !important; /* adjust 96px to your sticky header height */
+  min-height:640px !important;
+  border:0;
+  overflow:hidden;
+}
+
+/* Calendly injects inline styles with min-width:320px — override them */
+.calendar-bleed .calendly-inline-widget[style*="min-width"]{
+  min-width:0 !important;
+}
+
+/* Make the internal iframe fill its parent */
+.calendar-bleed .calendly-inline-widget iframe{
+  width:100% !important;
+  height:100% !important;
+  border:0;
+}
+
+.left-align {
+  text-align: left;
+  padding: 1rem 0;
+}
+
+/* youtube video wrapper for responsive card */
+/* Responsive video wrapper */
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 aspect ratio = 9/16*100 */
+  overflow: hidden;
+  background: #000;     /* prevents white flash before video loads */
+  border-bottom: solid 1px #000000;
+}
+
+/* Let iframe scale perfectly inside */
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}

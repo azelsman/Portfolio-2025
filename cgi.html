@@ -25,12 +25,26 @@
     <section class="content-container" aria-label="Main Content">
       <main role="main" aria-label="CGI Momentum Case Study">
         <h1 class="with-subtitle">CGI Momentum: Modernizing a Legacy Platform</h1>
-        <p class="subtitle">Acting Product Owner for UX — led vision, backlog, and delivery for a two-year transformation.</p>
+        <p class="subtitle">Acting Product Owner, UX — Led vision, backlog, and delivery for a two-year modernization.</p>
+
+
+        <!-- At a Glance -->
+        <section class="mandate" aria-labelledby="mandate-title">
+          <h2 id="mandate-title">At a Glance</h2>
+
+          <div class="chip-row" role="list">
+            <span class="chip" role="listitem"><strong>Legacy modernization</strong> | federal financial platform</span>
+            <span class="chip" role="listitem"><strong>PO / UX ownership</strong> | vision. backlog. delivery</span>
+            <span class="chip" role="listitem"><strong>Guided workflows</strong> | task clarity. reduced support</span>
+            <span class="chip" role="listitem"><strong>React component library</strong> | reusable patterns</span>
+            <span class="chip" role="listitem"><strong>Accessibility</strong> | WCAG 2.0 compliance</span>
+          </div>
+        </section>
 
         <!-- Project Overview -->
-        <section class="responsive-row">
+        <section id="project-overview" class="responsive-row" aria-labelledby="project-overview-title">
           <div>
-            <h2>Project Overview</h2>
+            <h2 id="project-overview-title">Project Overview</h2>
             <ul>
               <li><b>Client:</b> CGI Momentum</li>
               <li><b>Role:</b> Acting Product Owner, UX</li>
@@ -39,33 +53,19 @@
             </ul>
           </div>
           <div>
-            <h2>Tools &amp; Methods</h2>
+            <h2 id="tools-methods-title">Tools &amp; Methods</h2>
             <ul>
               <li>Adobe</li>
               <li>Axure</li>
-              <li>User Interviews</li>
-              <li>Usability Testing</li>
+              <li>User Interviews and Testing</li>
+              <li>Executive Alignment</li>
               <li>Design Thinking Workshops</li>
             </ul>
           </div>
         </section>
 
-        <!-- Project Mandate -->
-        <section class="mandate" aria-labelledby="mandate-title">
-        
-        <p class="mandate-intro">
-          Accountable for UX vision, backlog, and delivery across a two-year modernization.
-        </p>
 
-        <div class="chip-row" role="list">
-          <span class="chip" role="listitem"><strong>Decision rights</strong> | UX strategy. acceptance</span>
-          <span class="chip" role="listitem"><strong>Backlog</strong> | research. insights. prioritized work.</span>
-          <span class="chip" role="listitem"><strong>Delivery</strong> | sprint goals. readiness. release sign-off</span>
-          <span class="chip" role="listitem"><strong>Partners:</strong> Eng, PMO, Compliance, SMEs</span>
-        </div>
-        </section>
-
-        <!-- Project Stats / Quick Wins -->
+        <!-- Project Stats / Quick Wins 
         <section class="project-stats">
           <h2>Quick Wins</h2>
           <div class="card-container">
@@ -110,22 +110,24 @@
               </div>
             </div>
           </div>
+        </section>-->
+
+        <!-- Challenge section -->
+        <section id="cgi-challenge" aria-labelledby="cgi-challenge-title">
+          <h2 id="cgi-challenge-title">Challenge</h2>
+          <ul class="po-moves">
+            <li><strong>Legacy complexity:</strong> A monolithic web app supported intricate federal and state accounting workflows, slowed by years of feature creep and no dedicated UX leadership.</li>
+            <li><strong>Redundant taxonomies &amp; deep navigation:</strong> Five-tier menus and multi-step object relationships created confusion and inefficiency.</li>
+            <li><strong>Non-standard forms &amp; layouts:</strong> Inconsistent inputs and validation patterns reduced task success and user trust.</li>
+            <li><strong>Performance drag &amp; high support volume:</strong> Slow load times and unclear workflows increased tickets and stalled adoption.</li>
+          </ul>
+          <p class="note">
+            Momentum needed a clear UX north star, guided workflows, and shared design patterns to make modernization scalable.
+          </p>
         </section>
 
-        <!-- Starting Point section -->
-        <section id="starting-point">
-          <h2>Starting Point</h2>
-          <p>
-            Before 2015, Momentum was a monolithic web app supporting complex federal/state accounting workflows. Years of feature creep created complexity, inconsistency, and performance drag—with no dedicated UX to guide the product.
-          </p>
-          <ul>
-            <li>Redundant taxonomies and 5‑tier navigation; 3–7 related objects often took up to 4 clicks.</li>
-            <li>Non‑standard form layouts/controls reduced task success.</li>
-            <li>Performance bottlenecks across key screens.</li>
-            <li>Low adoption and high support costs; stalled innovation.</li>
-          </ul>
-        </section>
-        <div class="card-container">
+        <div class="card-container" aria-labelledby="challenge-examples-title">
+          <h2 class="sr-only" id="challenge-examples-title">Challenge Examples</h2>
             <div class="card">
                 <a href="img/CGI/whac-a-mole-4k.jpg" target="_blank" rel="noopener">
                 <img src="img/CGI/whac-a-mole.jpg" alt="Whac-a-Mole arcade game symbolizing constant firefighting in a complex, buggy system with no clear improvement plan." />
@@ -143,46 +145,50 @@
                 </div>
               </div>
             <div class="card">
-              <a href="img/CGI/momentum1-4k.png" target="_blank" rel="noopener">
+              <!--<a href="img/CGI/momentum1-4k.png" target="_blank" rel="noopener">
                 <img src="img/CGI/momentum1.png" alt="Screenshot of the redesigned platform showing streamlined task-based workflows and clear backlog tracking, reflecting a modern, user-centered system." />
-              </a>
+              </a>-->
+              <div class="video-wrapper">
+                <iframe 
+                  src="https://www.youtube.com/embed/R_n-O3ns33w"
+                  title="CGI Momentum Prototype"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen>
+                </iframe>
+              </div>
               <div class="card-content">
                 <p>After discovery, workflows were redesigned around real tasks — helping examiners stay organized and on top of backlogs.</p>
               </div>
             </div>
         </div>
-        <h2>Vision &amp; Objectives</h2>
-        
-        <ul>
-          <li><strong>Modernize on reusable components</strong> to speed delivery and consistency</li>
-          <li><strong>Cut support load and time-to-complete</strong> by guiding core tasks.</li>
-          <li><strong>Standardize patterns, search, and help</strong> to reduce training and rework.</li>
+        <section id="cgi-vision-objectives" aria-labelledby="cgi-vision-title">
+          <h2 id="cgi-vision-title">Vision &amp; Objectives</h2>
+          <ul class="po-moves">
+            <li><strong>Modernize the platform</strong> on reusable components to increase speed, consistency, and maintainability.</li>
+            <li><strong>Guide</strong> users through <strong>core workflows</strong> to reduce support volume and <strong>improve task completion.</strong></li>
+            <li><strong>Standardize</strong> patterns, search, and contextual help to <strong>streamline training</strong> and minimize rework.</li>
+          </ul>
+          <p class="note">
+            A clear vision for modernization — focused on consistency, clarity, and scalable design across a complex federal platform.
+          </p>
+        </section>
+
+        <section id="cgi-approach" aria-labelledby="cgi-approach-title">
+          <h2 id="cgi-approach-title">Approach</h2>
+          <ul class="po-moves">
+            <li><strong>Defined the UX north star</strong> and acceptance criteria for each release, ensuring alignment across design, product, and engineering.</li>
+            <li><strong>Led discovery → prioritization → sprint goals</strong> to balance user insights with delivery constraints.</li>
+            <li><strong>Managed roadmap trade-offs</strong> between expert efficiency and guided usability to serve both advanced and novice users.</li>
+            <li><strong>Approved readiness</strong> through prototypes, usability validation, and development sign-off.</li>
+          </ul>
+          <p class="note">
+            By embedding design ownership within agile delivery, the team accelerated modernization and unified cross-functional decision-making.
+          </p>
+        </section>
           
-        </ul>
-
-        <h2>Product Ownership Moves</h2>
-        <ul>
-          <li>Set the <strong>UX north star</strong> and acceptance criteria for each release.</li>
-            <li><strong>Ran discovery → prioritization → sprint goals</strong> with PM & Eng.</li>
-            <li>Owned <strong>roadmap trade-offs</strong> (expert density vs guidance).</li>
-            <li>Approved <strong>readiness:</strong> prototypes → usability → dev sign-off.</li>
-        </ul>
-
-  
-
-
-
-       
-
-        <h2>What we Shipped</h2>
-        <ul>
-          <li><strong>Discovered 12 pain points → 80% of friction</strong> and aligned on what to fix first.</li>
-          <li><strong>Prioritized the backlog</strong> with PM/Eng and sequenced four waves.</li>
-          <li><strong>Prototyped in short loops</strong> with users; insights fed each sprint.</li>
-          <li><strong>Standardized UI with a 508-compliant React library</strong> for speed and consistency.</li>
-          <li><strong>Delivered guided workflows, search, and contextual help</strong> across acquisition and planning.</li>
-        </ul>
-                  <div class="card-container">
+        <div class="card-container" aria-labelledby="approach-examples-title">
+          <h2 class="sr-only" id="approach-examples-title">Approach Examples</h2>
             <div class="card">
               <a href="img/CGI/CGI_Personas_Page_2-4k.png" target="_blank" rel="noopener">
                 <img src="img/CGI/CGI_Personas_Page_2.png" alt="Persona profile for Alison, a procurement manager, part of five user personas with varying mastery levels used to guide the redesign." />
@@ -207,49 +213,47 @@
                 <p><strong>Planning Timeline (Final):</strong> Established DATA Act–aligned transparency so teams could plan capacity with confidence.</p>
               </div>
             </div>
-          </div>
+        </div>
 
-        <section class="mandate" aria-labelledby="roadmap-owned-title">
-          <h2 id="roadmap-owned-title">How We Made it Real: I owned the UX roadmap.</h2>
-
-          <div class="chip-row" role="list">
-            <span class="chip" role="listitem">Stabilize &amp; Audit</span>
-            <span class="chip" role="listitem">Workflow Redesign</span>
-            <span class="chip" role="listitem">Integrations &amp; Automation</span>
-            <span class="chip" role="listitem">Rollout &amp; Adoption</span>
-          </div>
+        <section id="cgi-transformation" aria-labelledby="cgi-transformation-title">
+          <h2 id="cgi-transformation-title">Transformation</h2>
+          <ul class="po-moves">
+            <li><strong>Identified and resolved 12 core pain points</strong> driving 80% of user friction — aligning teams on what to fix first.</li>
+            <li><strong>Prioritized and sequenced the backlog</strong> with Product and Engineering across four coordinated release waves.</li>
+            <li><strong>Embedded rapid prototyping loops</strong> with users — insights from testing directly informed sprint planning.</li>
+            <li><strong>Standardized the UI</strong> through a 508-compliant React component library to ensure consistency and accessibility.</li>
+            <li><strong>Delivered guided workflows, search, and contextual help</strong> across acquisition and planning, simplifying complex user tasks.</li>
+          </ul>
+          <p class="note">
+            Momentum evolved from a fragmented legacy system to a unified, data-informed platform — establishing a sustainable model for continuous improvement across the federal product suite.
+          </p>
         </section>
 
-        
-        <section id="impact-results" class="impact" aria-labelledby="impact-title">
-        <h2 id="impact-title">Impact &amp; Results</h2>
-        <p>What my leadership delivered:</p>
 
-        <div class="chip-row" role="list">
-          <span class="chip" role="listitem"><strong>~50% support tickets</strong> | better onboarding, help, error states</span>
-          <span class="chip" role="listitem"><strong>On-time &amp; on-budget</strong> | broad adoption</span>
-          <span class="chip" role="listitem"><strong>Multi-brand React library</strong> | seeded design system</span>
-          <span class="chip" role="listitem"><strong>Lean UX + speed testing</strong> | gains every release</span>
-        </div>
-      </section>
+          <section class="mandate" aria-labelledby="outcomes-title">
+            <h2 id="outcomes-title">Outcomes</h2>
+            <div class="chip-row" role="list">
+              <span class="chip" role="listitem"><strong>Support tickets 50%</strong> | clearer workflows & help content</span>
+              <span class="chip" role="listitem"><strong>Task completion 30%</strong> | guided navigation & usability testing</span>
+              <span class="chip" role="listitem"><strong>React component library</strong> | 12+ reusable, accessible modules</span>
+              <span class="chip" role="listitem"><strong>WCAG 2.0 compliance</strong> | accessibility baked into design</span>
+              <span class="chip" role="listitem"><strong>On-time &amp; on-budget</strong> | sustained adoption & delivery velocity</span>
+            </div>
+          </section>
 
 
-        <h2>Lessons Learned</h2>
-        <ul>
-          <li><strong>Scale innovation</strong> by building systems, not just screens.</li>
-          <li><strong>Use mid/high‑fidelity prototypes early</strong> to surface gaps and build trust.</li>
-          <li><strong>Anchor priorities</strong> in metrics, journeys, and SME insights.</li>
-          <li><strong>Maintain frequent executive touchpoints</strong> to keep momentum.</li>
-          <li><strong>Introduce change incrementally</strong>; co‑create to reduce risk.</li>
-        </ul>
-
-        <h2>Forward Look</h2>
-        <ul>
-          <li><strong>Design Standards Council:</strong> Establish a Design Standards Council for governance, cadence, and quality.</li>
-          <li><strong>Design System Expansion:</strong> Expand the design system with modular layouts, mobile variants, and richer dashboards/search/export.</li>
-          <li><strong>Product Analytics & Speed Testing:</strong> Pair product analytics with ongoing “Speed Testing” to validate impact.</li>
-          <li><strong>Quarterly 508 Reviews:</strong> Run quarterly 508 reviews with automated and real‑user testing.</li>
-        </ul>
+        <section id="cgi-takeaways" aria-labelledby="cgi-takeaways-title">
+          <h2 id="cgi-takeaways-title">Takeaways</h2>
+          <ul class="po-moves">
+            <li><strong>Scale innovation through systems, not screens.</strong> Building reusable components and design standards created momentum beyond individual releases.</li>
+            <li><strong>Prototype early to build trust.</strong> Mid- and high-fidelity prototypes surfaced risks faster and aligned executives around evidence, not assumptions.</li>
+            <li><strong>Anchor decisions in metrics and user insight.</strong> Quantitative data and SME feedback shaped priorities and reduced rework.</li>
+            <li><strong>Governance accelerates quality.</strong> Establishing a design standards council and regular 508 reviews ensured sustainable improvement and accessibility compliance.</li>
+          </ul>
+          <p class="note">
+            Modernization succeeded not by replacing technology—but by uniting design, product, and engineering around shared systems, measurable outcomes, and continuous improvement.
+          </p>
+        </section>
       </main>
     </section>
     <pagination></pagination>
