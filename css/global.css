@@ -883,7 +883,6 @@ main .image-wrap {
 .video-wrapper {
   position: relative;
   width: 100%;
-  padding-top: 56.25%; /* 16:9 aspect ratio = 9/16*100 */
   overflow: hidden;
   background: #000;     /* prevents white flash before video loads */
   border-bottom: solid 1px #000000;
@@ -891,6 +890,25 @@ main .image-wrap {
 
 /* Let iframe scale perfectly inside */
 .video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-wrapper-portrait {
+  position: relative;
+  width: 200px;
+  height: 100%;
+  padding-top: 0; /* 9:16 aspect ratio = 16/9*100 */
+  overflow: hidden;
+  background: #000;     /* prevents white flash before video loads */
+  border-bottom: solid 1px #000000;
+}
+
+.video-wrapper-portrait iframe {
   position: absolute;
   top: 0;
   left: 0;
