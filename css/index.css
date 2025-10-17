@@ -27,9 +27,9 @@
     }
 
     .tagline {
-      text-align: center;
+      text-align: left;
       font-size: 1.2rem;
-      padding: 1rem;
+      padding: 1rem 0;
     }
 
     /* Use flexbox for a fixed gutter and centered wrapping cards */
