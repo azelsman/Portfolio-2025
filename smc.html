@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Santa’s Magic Call</title>
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/afi.css" />
+  <script src="local-scripts.js" defer></script>
+  <style>
+    /* Page-specific overrides (optional) can go here if needed */
+  </style>
+</head>
+<body>
+<main id="main-container" class="container" role="main" tabindex="-1">
+  <nav id="header" role="navigation">
+  </nav>
+
+  <div class="hero bordered" role="banner" aria-label="Santa’s Magic Call Hero Image">
+    <img src="img/smc-hero.jpg" alt="Santa’s Magic Call hero thumbnail representing a cozy, magical Santa experience." />
+  </div>
+
+  <breadcrumb id="breadcrumb"></breadcrumb>
+
+  <!-- Main content section -->
+  <section class="content-container" aria-label="Main Content">
+    <main role="main" aria-label="Santa’s Magic Call Case Study">
+        <p class="overline">Case Study</p>
+      <h1 class="with-subtitle">Santa’s Magic Call: A Safe, Magical Human+AI Experience</h1>
+      <p class="subtitle">
+        Staff/Principal Product Designer &amp; Experience Architect — Zero-to-one Human+AI Santa experience for kids,
+        built in about a month with safety, story, and systems at the core.
+      </p>
+
+      <p>
+        Santa’s Magic Call is a real-time, voice-only Santa experience for kids, powered by AI and built to feel magical,
+        safe, and human. It gives parents a way to create a warm Christmas moment without more screen time or creepy AI behavior—
+        and it gives teams a concrete example of how a beloved character can live as a live, responsive system.
+      </p>
+      <p>
+        I took Santa’s Magic Call from idea to live Human+AI product in about a month: defining the brand and promise,
+        designing Santa’s persona and story arc, writing the safety rails that protect kids, and architecting the full system—
+        landing page, Stripe checkout, Make automation, magic-link tokens, and a time-limited ElevenLabs voice agent—plus the
+        story-driven go-to-market around it.
+      </p>
+
+      <!-- At a Glance -->
+      <section class="mandate" aria-labelledby="mandate-title">
+        <h2 id="mandate-title">At a Glance</h2>
+
+        <div class="chip-row" role="list">
+          <span class="chip" role="listitem"><strong>Human+AI Santa</strong> | real-time, voice-only experience</span>
+          <span class="chip" role="listitem"><strong>Character &amp; safety design</strong> | kid-facing AI</span>
+          <span class="chip" role="listitem"><strong>System architecture</strong> | Stripe → Make → magic link → voice agent</span>
+          <span class="chip" role="listitem"><strong>Story-driven go-to-market</strong> | hero video &amp; short-form content</span>
+          <span class="chip" role="listitem"><strong>Experience Modeling</strong> | synthetic personas &amp; advisory agents</span>
+        </div>
+      </section>
+
+      <!-- Project Overview -->
+      <section id="project-overview" class="responsive-row" aria-labelledby="project-overview-title">
+        <div>
+          <h2 id="project-overview-title">Project Overview</h2>
+          <ul>
+            <li><b>Client:</b> Santa’s Magic Call (UX Agentic Prototype Lab)</li>
+            <li><b>Role:</b> Staff/Principal Product Designer &amp; Experience Architect (founder-led, end-to-end ownership)</li>
+            <li><b>Timeline:</b> ~1 month from initial concept to live, purchasable experience</li>
+            <li><b>Team:</b> Solo founder/operator supported by AI agents, automations, and a small network of parent testers</li>
+          </ul>
+        </div>
+        <div>
+          <h2 id="tools-methods-title">Tools &amp; Methods</h2>
+          <ul>
+            <li><b>Voice AI:</b> ElevenLabs real-time agent</li>
+            <li><b>Orchestration:</b> Make (webhooks, token management, session control)</li>
+            <li><b>Commerce &amp; Access:</b> Stripe for purchase → entitlement → magic-link delivery</li>
+            <li><b>Web:</b> Lightweight HTML/JS call page &amp; parent flows</li>
+            <li><b>Design &amp; Prototyping:</b> Figma</li>
+            <li><b>Creative &amp; Visual:</b> Adobe Creative Cloud (branding, visuals, motion)</li>
+            <li><b>Video &amp; Content:</b> GenAI video tools (e.g., Veo) + DaVinci Resolve</li>
+            <li><b>Methods:</b> Experience Modeling, Human+AI interaction design, safety &amp; ethics for kid-facing AI, story-driven experience architecture, behavioral psychology &amp; neuroscience-informed design, parent feedback loops</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Challenge section -->
+      <section id="smc-challenge" aria-labelledby="smc-challenge-title">
+        <h2 id="smc-challenge-title">Challenge</h2>
+        <p>
+          Most families know two versions of Santa: the rushed mall visit and the endless scroll of holiday content.
+          Both are loud, overstimulating, and rarely built around what kids actually need—a calm, warm moment where they feel seen.
+        </p>
+        <p>
+          At the same time, many teams are under pressure to “do something with AI” but avoid kid-facing experiences because the stakes are high.
+          One awkward response or unsafe topic can damage trust with parents and the brand.
+        </p>
+        <ul class="po-moves">
+          <li><strong>Warm, human, magical:</strong> Design a real-time, voice-only Santa experience that feels genuinely magical—not robotic, salesy, or gimmicky.</li>
+          <li><strong>Emotional safety:</strong> Keep children emotionally and psychologically safe in every interaction.</li>
+          <li><strong>Myth protection:</strong> Protect the Santa myth and family traditions without overexplaining how the magic works.</li>
+          <li><strong>Parent simplicity &amp; trust:</strong> Make it simple and trustworthy enough that a busy parent will use it once and feel good about using it again.</li>
+          <li><strong>Lean operations:</strong> Run the service reliably with one human plus AI agents and automations during a short holiday window—no large support team.</li>
+        </ul>
+        <p class="note">
+          The goal wasn’t a clever AI demo. It was to prove that a beloved character could live as a live Human+AI system that parents actually trust—
+          with clear safety rails, simple access, and a story that feels good on the other side of the call. If it works for Santa, the pattern can extend to other characters, IP, and experiential brands.
+        </p>
+      </section>
+
+      <!-- Challenge Examples (all using elfThumb.png) -->
+      <div class="card-container" aria-labelledby="challenge-examples-title">
+        <h2 class="sr-only" id="challenge-examples-title">Challenge Examples</h2>
+
+        <div class="card">
+          <a href="img/elfThumb.png" target="_blank" rel="noopener">
+            <img src="img/elfThumb.png" alt="Thumbnail representing the contrast between chaotic holiday experiences and a calm Santa call." />
+          </a>
+          <div class="card-content">
+            <p>
+              A visual contrast between noisy holiday chaos and the calm, five-minute Santa call that Santa’s Magic Call is designed to offer.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <a href="img/elfThumb.png" target="_blank" rel="noopener">
+            <img src="img/elfThumb.png" alt="Thumbnail representing kid-facing AI risk and the need for strong safety rails." />
+          </a>
+          <div class="card-content">
+            <p>
+              A conceptual frame for kid-facing AI: high emotional stakes, reputation risk, and why safety and myth continuity have to be first-class design concerns.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <a href="img/elfThumb.png" target="_blank" rel="noopener">
+            <img src="img/elfThumb.png" alt="Thumbnail representing families seeking a more meaningful Santa experience." />
+          </a>
+          <div class="card-content">
+            <p>
+              Parents looking for more than rushed mall photos or generic videos—a simple, meaningful way to give their kids a real moment with Santa.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vision & Objectives -->
+      <section id="smc-vision-objectives" aria-labelledby="smc-vision-title">
+        <h2 id="smc-vision-title">Vision &amp; Objectives</h2>
+        <ul class="po-moves">
+          <li><strong>Vision:</strong> Create a Santa experience that feels like it was designed by someone who understands both kids and AI—a cozy, real-time voice call where a child’s imagination, not their wishlist, powers the magic.</li>
+          <li><strong>Child experience:</strong> Deliver a five-minute call that feels personal, calm, and playful for shy, high-energy, and imaginative kids alike.</li>
+          <li><strong>Emotional focus:</strong> Center the interaction on the child’s “spark”—their kindness, creativity, and feelings—rather than on gifts or consumption.</li>
+          <li><strong>Safety &amp; myth:</strong> Keep language and pacing gentle, preserve Santa’s warmth and myth, and never break character or expose the mechanics behind the magic.</li>
+          <li><strong>System pattern:</strong> Use Santa’s Magic Call as a flagship pattern for Human+AI experiences that can extend to other IP and experiential brands.</li>
+        </ul>
+        <p class="note">
+          In short, the vision was to make Santa feel small and human on the outside—and to design a Human+AI system inside that families and brands can trust.
+        </p>
+      </section>
+
+      <!-- Approach -->
+      <section id="smc-approach" aria-labelledby="smc-approach-title">
+        <h2 id="smc-approach-title">Approach</h2>
+        <p>
+          To keep this case skimmable, the deep details live in visuals and the demo. At a high level, my approach was:
+        </p>
+        <ul class="po-moves">
+          <li><strong>Design Santa as a live character, not just a prompt:</strong> Emotional pillars, voice and tone, and myth rules (no naughty list, no breaking the magic) to keep Santa consistent and warm.</li>
+          <li><strong>Bake safety and ethics in from day one:</strong> Forbidden topics, redirect patterns, and soft landings for sensitive moments, guided by a synthesized Childhood Advisory Council.</li>
+          <li><strong>Architect the Human+AI system behind the magic:</strong> End-to-end flow (Stripe → Make → magic link → time-limited ElevenLabs call) so one human plus AI agents can run the experience reliably.</li>
+          <li><strong>Structure the call as emotional beats, not a script:</strong> A five-minute arc of greeting → Elf name → Snow Globe problem → wish → deeper feeling → identity-affirming close, tuned for different child types.</li>
+          <li><strong>Extend the same story into marketing:</strong> Hero video, Elf Orientation, and short-form concepts (Mallet Test, How to Hide a Pony, Snow Globe “hypnotist” clips, QR campaigns) as an outer ring of the same narrative.</li>
+          <li><strong>Use Experience Modeling to rehearse edge cases:</strong> Synthetic child/parent personas and advisory agents to tune language, spot risk, and adjust safety rails before live families use the system.</li>
+        </ul>
+        <p class="note">
+          The result is a Human+AI experience where character, safety, system, and story are all designed as one.
+        </p>
+      </section>
+
+      <!-- Approach Examples (elfThumb placeholders) -->
+      <div class="card-container" aria-labelledby="approach-examples-title">
+        <h2 class="sr-only" id="approach-examples-title">Approach Examples</h2>
+
+        <div class="card">
+          <a href="img/elfThumb.png" target="_blank" rel="noopener">
+            <img src="img/elfThumb.png" alt="Thumbnail representing Santa’s persona, tone, and myth continuity rules." />
+          </a>
+          <div class="card-content">
+            <p>
+              Santa persona and tone guidelines—capturing emotional pillars, language patterns, and myth rules to keep the character coherent and kind.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <a href="img/elfThumb.png" target="_blank" rel="noopener">
+            <img src="img/elfThumb.png" alt="Thumbnail representing the Human+AI system architecture for Santa’s Magic Call." />
+          </a>
+          <div class="card-content">
+            <p>
+              System view of the Stripe → Make → magic-link → ElevenLabs call flow, showing how parents see a simple path while orchestration handles the complexity.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <a href="img/elfThumb.png" target="_blank" rel="noopener">
+            <img src="img/elfThumb.png" alt="Thumbnail representing Experience Modeling with synthetic child and parent personas." />
+          </a>
+          <div class="card-content">
+            <p>
+              Experience Modeling artifacts—synthetic child and parent personas and advisory agents used to rehearse edge cases and refine safety decisions.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Transformation -->
+      <section id="smc-transformation" aria-labelledby="smc-transformation-title">
+        <h2 id="smc-transformation-title">Transformation</h2>
+        <ul class="po-moves">
+          <li><strong>For families:</strong> From rushed mall photos and generic videos to a calm, five-minute conversation where Santa listens, reflects feelings, and reminds kids that their kindness and imagination make the magic work.</li>
+          <li><strong>For the experience pattern:</strong> From “kid-facing AI is too risky” and concept-only demos to a working, reusable pattern for character-led Human+AI services with safety rails and a lean operating model.</li>
+          <li><strong>For my practice:</strong> From strong theory around Experience Modeling and Human+AI systems to a live flagship that proves those ideas under real pressure—and yields reusable agents, patterns, and narrative structures.</li>
+        </ul>
+        <p class="note">
+          Santa’s Magic Call turned a fragile idea into a tested pattern for Human+AI experiences that can scale across characters and brands.
+        </p>
+      </section>
+
+      <!-- Outcomes chips -->
+      <section class="mandate" aria-labelledby="outcomes-title">
+        <h2 id="outcomes-title">Outcomes</h2>
+        <div class="chip-row" role="list">
+          <span class="chip" role="listitem"><strong>Zero-to-one in ~1 month</strong> | from idea to purchasable Human+AI experience</span>
+          <span class="chip" role="listitem"><strong>Lean Human+AI ops model</strong> | one human + AI agents &amp; automations</span>
+          <span class="chip" role="listitem"><strong>Reusable architecture</strong> | Stripe → Make → magic link → time-limited voice agent</span>
+          <span class="chip" role="listitem"><strong>Safety patterns</strong> | reusable rails, redirects, and myth continuity rules</span>
+          <span class="chip" role="listitem"><strong>Experience Modeling assets</strong> | synthetic personas &amp; advisory agents now reused across UX Agentic</span>
+        </div>
+      </section>
+
+      <!-- Takeaways -->
+      <section id="smc-takeaways" aria-labelledby="smc-takeaways-title">
+        <h2 id="smc-takeaways-title">Takeaways</h2>
+        <p>
+          This project put all of my ideas about Human+AI experiences under real pressure. I had to make hard tradeoffs, live inside the edge cases, and design for the moments that could quietly go wrong for a child or a parent.
+        </p>
+        <p>
+          Along the way I validated a lot of what I’ve been working toward—Experience Modeling, safety-first design, story and system evolving together—and I came out with something I’m proud of: a Santa experience that feels small and human on the outside, and carries a lot of thought and care on the inside.
+        </p>
+        <p>
+          If you’re exploring Human+AI experiences for your own products or IP and want to talk through what’s possible, you can
+          <a href="#cta">get in touch here</a>.
+        </p>
+      </section>
+    </main>
+  </section>
+
+  <pagination></pagination>
+
+  <!-- Call to Action section (global CTA will render here) -->
+  <section id="cta" class="cta" aria-label="Call to Action">
+  </section>
+
+  <footer id="footer" role="contentinfo">
+  </footer>
+</main>
+</body>
+</html>
