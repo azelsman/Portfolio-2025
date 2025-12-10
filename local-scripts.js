@@ -29,11 +29,12 @@ loadSection('breadcrumb.html', 'breadcrumb', '<div class="error">Breadcrumb fail
 // Case study pagination logic
 document.addEventListener("DOMContentLoaded", function() {
   const studies = [
+    { href: "smc.html", label: "Santa's Magic Call" },
     { href: "afi.html", label: "American Family Insurance" },
     { href: "cgi.html", label: "CGI Momentum" },
     { href: "uspto.html", label: "U.S. Patent and Trademark Office" },
-    { href: "vocus.html", label: "Vocus Marketing Cloud" },
-    { href: "tableworks.html", label: "Tableworks" }
+    //{ href: "vocus.html", label: "Vocus Marketing Cloud" },
+    //{ href: "tableworks.html", label: "Tableworks" }
   ];
 
   const currentFile = window.location.pathname.split('/').pop();
