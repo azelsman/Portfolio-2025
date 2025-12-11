@@ -399,6 +399,132 @@ footer a:hover{
   font-weight: 700;
 }
 
+/* Media modal styles (images, local video, YouTube) */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0; /* top:0; right:0; bottom:0; left:0 */
+  background: rgba(0,0,0,0.6);
+  z-index: 1200;
+  align-items: center;
+  justify-content: center;
+  padding: 0; /* ensure overlay doesn't add extra space that causes scroll */
+  box-sizing: border-box;
+}
+.modal.active {
+  display: flex;
+}
+.modal .modal-inner {
+  /* make the inner container hug its content instead of filling the viewport */
+  background: transparent; /* keep transparent so media appears on backdrop */
+  border-radius: 8px;
+  max-width: 960px;
+  display: inline-block; /* shrink to content */
+  vertical-align: middle;
+  max-height: 90vh;
+  overflow: auto; /* allow scrolling when media taller than viewport */
+  position: relative;
+}
+.modal .modal-body {
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  display: block;
+  text-align: center;
+}
+.modal .modal-body img,
+.modal .modal-body video,
+.modal .modal-body iframe {
+  max-width: 100%;
+  max-height: 80vh;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* center horizontally */
+}
+.modal .modal-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: transparent;
+  border: none;
+  color: #c4c4c4;
+  font-size: 1.4rem;
+  line-height: 1;
+  padding: 8px;
+  cursor: pointer;
+}
+.modal .modal-close:focus {
+  outline: 2px solid #c4c4c4;
+  outline-offset: 2px;
+}
+
+/* Frameless media modal: show media directly on the backdrop */
+.media-modal .modal-inner {
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+  max-width: 100%;
+}
+.media-modal .modal-body {
+  padding: 0;
+}
+.media-modal .modal-close {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  background: rgba(0,0,0,0.45);
+  color: #fff;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 1.2rem;
+  z-index: 1300;
+}
+
+/* Responsive frame used for YouTube embeds and other aspect-sensitive media */
+.media-frame {
+  /* Use viewport-relative width but cap at 960px; prevents horizontal overflow */
+  width: 92vw;
+  max-width: 960px; /* limit very large embeds */
+  margin: 0 auto;
+  box-sizing: border-box;
+  /* prevent the frame itself from exceeding the viewport height */
+  max-height: calc(100vh - 64px);
+  overflow: hidden;
+}
+.media-frame .embed-responsive {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.media-frame .embed-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Small screens */
+@media (max-width: 600px) {
+  .modal .modal-inner {
+    max-width: 100%;
+    /* don't force full height on mobile; let inner hug content */
+    max-height: 100vh;
+    border-radius: 0;
+  }
+  .modal .modal-body {
+    padding: 0.25rem;
+    -webkit-overflow-scrolling: touch;
+  }
+  .modal .modal-body img,
+  .modal .modal-body video,
+  .modal .modal-body iframe {
+    max-height: calc(100vh - 72px); /* leave space for close button and padding */
+    margin: 0 auto;
+    display: block;
+  }
+}
+
 
 .cta-container {
   width: 100%;
