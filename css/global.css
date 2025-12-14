@@ -1051,3 +1051,15 @@ main .image-wrap {
   height: 100%;
   border: 0;
 }
+
+
+/* UTILITIES */
+.padding-top-small {
+  padding-top: 0.5rem;
+}
+.padding-top-medium {
+  padding-top: 1rem;
+}
+.padding-top-large {
+  padding-top: 2rem;
+}

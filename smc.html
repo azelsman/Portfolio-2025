@@ -25,27 +25,53 @@
   <!-- Main content section -->
   <section class="content-container" aria-label="Main Content">
     <main role="main" aria-label="Santa’s Magic Call Case Study">
+      <section id="smc-hero" aria-labelledby="smc-hero-title">
         <p class="overline">Case Study</p>
-      <h1 class="with-subtitle">Santa’s Magic Call: A Safe, Magical Human+AI Experience</h1>
-      <p class="subtitle">
-        Staff/Principal Product Designer &amp; Experience Architect — Zero-to-one Human+AI Santa experience for kids,
-        built in about a month with safety, story, and systems at the core.
-      </p>
 
-      <p>
-        Santa’s Magic Call is a real-time, voice-only Santa experience for kids, powered by AI and built to feel magical,
-        safe, and human. It gives parents a way to create a warm Christmas moment without more screen time or creepy AI behavior—
-        and it gives teams a concrete example of how a beloved character can live as a live, responsive system.
-      </p>
-      <p>
-        I took Santa’s Magic Call from idea to live Human+AI product in about a month: defining the brand and promise,
-        designing Santa’s persona and story arc, writing the safety rails that protect kids, and architecting the full system—
-        landing page, Stripe checkout, Make automation, magic-link tokens, and a time-limited ElevenLabs voice agent—plus the
-        story-driven go-to-market around it.
-      </p>
+        <h1 class="with-subtitle" id="smc-hero-title">
+          Santa’s Magic Call: A Safe, Magical Human+AI Experience
+        </h1>
+
+        <p class="subtitle">
+          Staff/Principal Product Designer &amp; Experience Architect — Zero-to-one Human+AI Santa experience for kids,
+          built in about a month with safety, story, and systems at the core.
+        </p>
+
+        <p>
+          Santa’s Magic Call is a real-time, voice-only Santa experience for kids, powered by AI and built to feel magical,
+          safe, and human. It gives parents a way to create a warm Christmas moment without more screen time or creepy AI behavior—
+          and it gives teams a concrete example of how a beloved character can live as a live, responsive system.
+        </p>
+
+        <p>
+          I took Santa’s Magic Call from idea to an end-to-end Human+AI prototype in about a month: defining the brand and promise,
+          designing Santa’s persona and story arc, writing the safety rails that protect kids, and architecting the full system—
+          landing page, Stripe checkout, Make automation, magic-link tokens, and a time-limited ElevenLabs voice agent—plus the
+          story-driven go-to-market around it.
+        </p>
+
+        <p class="note">
+          Beyond Santa, this is a proof of a reusable Human+AI pattern: translating human intent and mental models into reliable AI
+          behavior through clear constraints (contracts), gating logic, and deterministic experience outcomes (arc, safety, redirects).
+        </p>
+      </section>
+
+      <!-- Case Study Bridge-->
+
+      <section id="smc-experience-modeling-loop" aria-labelledby="smc-experience-modeling-loop-title" class="padding-top-medium">
+        <h2 id="smc-experience-modeling-loop-title">Experience Modeling decision loop</h2>
+        <p>
+          The biggest leverage wasn’t generating content—it was accelerating decisions. I interacted with parent and child personas
+          and reviewed key moments through SME, psychology, and marketing lenses to stress-test tone, trust, and safety before scale.
+          That loop compressed ambiguity into clarity and gave me the confidence to design and build the end-to-end experience in about a month.
+        </p>
+        <p class="note">
+          Instead of waiting for traction data, I used persona + expert-lens pressure testing to make safer, faster product decisions under uncertainty.
+        </p>
+      </section>
 
       <!-- At a Glance -->
-      <section class="mandate" aria-labelledby="mandate-title">
+      <section class="padding-top-medium" aria-labelledby="mandate-title">
         <h2 id="mandate-title">At a Glance</h2>
 
         <div class="chip-row" role="list">
@@ -56,6 +82,10 @@
           <span class="chip" role="listitem"><strong>Experience Modeling</strong> | synthetic personas &amp; advisory agents</span>
         </div>
       </section>
+
+      <p class="note">
+        Jump to: <a href="#smc-challenge">Challenge</a> · <a href="#smc-approach">Approach</a> · <a href="#smc-outcomes">Outcomes</a> · <a href="#smc-demo">Demo</a>
+      </p>
 
       <!-- Project Overview -->
       <section id="project-overview" class="responsive-row" aria-labelledby="project-overview-title">
@@ -243,6 +273,9 @@
       <!-- Outcomes chips -->
       <section class="mandate" aria-labelledby="outcomes-title">
         <h2 id="outcomes-title">Outcomes</h2>
+        <p class="note">
+          Evidence note: This was a pre-scale validation build—clarity came from persona + expert-lens pressure testing, not traction metrics.
+        </p>
         <div class="chip-row" role="list">
           <span class="chip" role="listitem"><strong>Zero-to-one in ~1 month</strong> | from idea to purchasable Human+AI experience</span>
           <span class="chip" role="listitem"><strong>Lean Human+AI ops model</strong> | one human + AI agents &amp; automations</span>
